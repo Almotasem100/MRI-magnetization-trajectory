@@ -103,16 +103,27 @@
 </br>
 </br>
 </br>
-## **Non-uniform k-space and Net Vector representation** 
-**Part 1**: K-space already implemented in the previous task <br/>
-**Part 2**: After adding the Non-uniformity effect to the static Magnetic field that was already calculated. <br/>
-First,we create some figures to show the effect of the non-uniform magnetic field
+
+## **Part Three**
+
+### Task Statment
+**- Show the Non-uniformity effect in MRI** <br/>
+**- Plot the bulk magnetization's trajectory formed as a net result of multiple vectors.** <br/>
+## Summary about our implementation 
+We implemented a K-space vector and added a non uniformity effect to the static Magnetic field that was already calculated and plotted the signal in our GUI. and got the following results.
+
 
 <img src="images/freq.png" width="600" height="300" /> <br/>
 <img src="images/freq_diff.png" width="600" height="300" /> <br/>
 <img src="images/field.png" width="600" height="300" /> <br/>
-Second,in our simulation with openGl we add three different vectors(red,blue,green) each rotate with diffrent freq,and the net magnetization vector in x-y plane represented by yellow color   
+</br>
+
+#### **Second**
+
+in our simulation with openGl we added three different vectors(red,blue,green) each rotate with diffrent freq,and the net magnetization vector in x-y plane represented by yellow color.
+</br>
+The net magnetization vector(yellow) in MRI represents the summation of all the magnetic moments of the individual hydrogen nuclei (red,blue,green). In the absence of an external magnetic field, the individual magnetic moments are randomly oriented and since they are in opposition, the net magnetization vector is considered to be zero.</br>
 ![opengl](images/task2.gif)
 
-Also,in the simulation using python we did the same thing adding three vectors with different freq and the net magnetization vector in x-y plane represented by dashed vector
+Also, we resimulated it using python by adding three vectors with different freq and the net magnetization vector in x-y plane represented by dashed vector.
 ![python](images/task2.1.gif)
